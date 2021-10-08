@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# .env
+#
+# ref: https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app
+# TODO: Check server side request methods
+
+.env
