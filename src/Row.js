@@ -16,15 +16,16 @@ function Row({ title, fetchUrl }) {
     fetchData();
   }, [fetchUrl]);
 
-  console.log(movies);
+  // console.log(movies);
 
   return (
     <div>
       <h2>{title}</h2>
-      <div className="row__posters ">
+      <div className="row__posters">
         {movies.map((movie) => (
           <img
             key={movie.id}
+            className="row__poster"
             src={`${baseUrl}${movie.poster_path}`}
             alt={movie.name}
           />
